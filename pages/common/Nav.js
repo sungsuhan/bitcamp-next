@@ -7,8 +7,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Tooltip from '@mui/material/Tooltip';
-import MenuIcon from '@mui/icons-material/Menu';
-import Router from "next/router";
 import Link from "next/link";
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -21,7 +19,7 @@ const HomeIcon = createSvgIcon(
   'Home',
 );
 
-const pages = ['카운터', '계산기', 'BMI', '게시판'];
+const pages = ['홈', 'bestlist', 'likelist', 'mymain', 'myouter', 'mytop', 'mybottom', 'myshoes', 'myadd'];
 const preSettings = ['회원가입', '로그인'];
 const postSettings = ['프로필', '정보수정', '로그아웃', '회원탈퇴'];
 
@@ -68,8 +66,8 @@ export default function Nav(){
     }
   }, [])
 
-  const basicUrls = ["/basic/counter","/basic/calc","/basic/bmi"]
-  const basicSubTitle = ["카운터","계산기","BMI", "게시판"]
+  // const basicUrls = ["/basic/counter","/basic/calc","/basic/bestlist","/basic/bmi","/basic/bmi","/basic/bmi","/basic/bmi","/basic/bmi","/basic/bmi","/basic/bmi","/basic/bmi"]
+  // const basicSubTitle = ["카운터","계산기","BMI","BMI","BMI","BMI","BMI","BMI","BMI","BMI","BMI"]
   // const userUrls = ["/user/join","/user/login","/user/logout","/user/profile","/user/updUser","/user/withdrawUser","user/getUsers"]
   // const userSubTitle = ["회원가입","로그인","로그아웃","프로필","회원수정","회원탈퇴","회원목록"]
   const todoUrls = ["/todo/addTodo","/todo/getTodos","/todo/modifyTodo","/todo/removeTodo"]
@@ -88,7 +86,21 @@ export default function Nav(){
                       break;
       case 'BMI':  window.location.href='/basic/bmi'
                       break;
-      case '게시판':  window.location.href='/board/list'
+      case 'bestlist':  window.location.href='/basic/bestlist'
+                      break;
+      case 'likelist':  window.location.href='/basic/likelist'
+                      break;
+      case 'mymain':  window.location.href='/basic/mymain'
+                      break;
+      case 'myouter':  window.location.href='/basic/myouter'
+                      break;
+      case 'mytop':  window.location.href='/basic/mytop'
+                      break;
+      case 'mybottom':  window.location.href='/basic/mybottom'
+                      break;
+      case 'myshoes':  window.location.href='/basic/myshoes'
+                      break;
+      case 'myadd':  window.location.href='/basic/myadd'
                       break;
       default: window.location.href='/'
                       break;
