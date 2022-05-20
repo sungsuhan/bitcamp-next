@@ -19,7 +19,7 @@ const HomeIcon = createSvgIcon(
   'Home',
 );
 
-const pages = ['홈', 'bestlist', 'likelist', 'mymain', 'myouter', 'mytop', 'mybottom', 'myshoes', 'myadd'];
+const pages = ['홈', 'bestlist', 'likelist', 'mymain', 'myouter', 'mytop', 'mybottom', 'myshoes', 'myadd', 'myqna'];
 const preSettings = ['회원가입', '로그인'];
 const postSettings = ['프로필', '정보수정', '로그아웃', '회원탈퇴'];
 
@@ -101,6 +101,8 @@ export default function Nav(){
       case 'myshoes':  window.location.href='/basic/myshoes'
                       break;
       case 'myadd':  window.location.href='/basic/myadd'
+                      break;
+      case 'myqna':  window.location.href='/basic/myqna'
                       break;
       default: window.location.href='/'
                       break;
